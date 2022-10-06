@@ -72,7 +72,7 @@ namespace PilotsSafe
         }
         void ChangeSizeField(object sender, RoutedEventArgs e)
         {
-            if (Int32.TryParse(textBox.Text, out int size))
+            if (Int32.TryParse(textBox.Text, out int size) && size > 2)
             {
                 InitializationPlayingField(size);
             } 
